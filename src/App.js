@@ -2,6 +2,7 @@ import React from 'react';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Home from './components/Home';
+import WaiterView from './components/waiterView/WaiterView';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path="/waiter">
+          <WaiterView />
         </Route>
       </Switch>
     </Router>
