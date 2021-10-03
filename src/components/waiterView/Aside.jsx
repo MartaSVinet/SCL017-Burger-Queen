@@ -2,7 +2,9 @@ import React from 'react';
 
 const Aside = () => {
   return (
-    <div>ASIDEASIDEASIDE</div>
+    <aside>
+      <h2>Detalle del Pedido:</h2>
+    </aside>
   );
 }
 
