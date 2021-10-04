@@ -10,7 +10,7 @@ const Main = (props) => {
   const { breakfasts, burgers, sidedishes, drinks, add } = props;
 
   return (
-    <main className="col-bigger">
+    <main className="block col-bigger">
       <div>
         <form>
           <span>Nombre del cliente: </span>

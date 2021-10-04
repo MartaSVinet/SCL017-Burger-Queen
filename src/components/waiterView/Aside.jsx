@@ -5,7 +5,7 @@ const Aside = (props) => {
   const itemsTotalPrice = orderItems.reduce((acumulator, currentItem) => acumulator + currentItem.price * currentItem.quantity, 0);
 
   return (
-    <aside className="col-smaller">
+    <aside className="block col-smaller">
       <h2>Detalle del Pedido:</h2>
       <div>
         {orderItems.length === 0 && <div>Cero ítems.</div>}
