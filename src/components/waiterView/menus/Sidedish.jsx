@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Sidedish = (props) => {
-  const { sidedish } = props;
+  const { sidedish, add } = props;
 
   return (
     <div>
@@ -9,7 +9,7 @@ const Sidedish = (props) => {
       <h3>{sidedish.name}</h3>
       <p>${sidedish.price}</p>
       <div>
-        <button>Agregar</button>
+        <button onClick={() => add(sidedish)}>Agregar</button>
       </div>
     </div>
   );

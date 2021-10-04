@@ -7,7 +7,7 @@ import Drink from './menus/Drink';
 import Sidedish from './menus/Sidedish';
 
 const Main = (props) => {
-  const { breakfasts, burgers, sidedishes, drinks } = props;
+  const { breakfasts, burgers, sidedishes, drinks, add } = props;
 
   return (
     <main>
@@ -28,7 +28,7 @@ const Main = (props) => {
           <TabPanel>
             <div>
               {breakfasts.map((breakfast) => (
-                <Breakfast key={breakfast.id} breakfast={breakfast}/>
+                <Breakfast key={breakfast.id} breakfast={breakfast} add={add}/>
               ))}
             </div>
           </TabPanel>
@@ -42,21 +42,21 @@ const Main = (props) => {
               <TabPanel>
                 <div>
                   {burgers.map((burger) => (
-                    <Burger key={burger.id} burger={burger}/>
+                    <Burger key={burger.id} burger={burger} add={add}/>
                   ))}
                 </div>
               </TabPanel>
               <TabPanel>
                 <div>
                   {sidedishes.map((sidedish) => (
-                    <Sidedish key={sidedish.id} sidedish={sidedish}/>
+                    <Sidedish key={sidedish.id} sidedish={sidedish} add={add}/>
                   ))}
                 </div>
               </TabPanel>
               <TabPanel>
                 <div>
                   {drinks.map((drink) => (
-                    <Drink key={drink.id} drink={drink}/>
+                    <Drink key={drink.id} drink={drink} add={add}/>
                   ))}
                 </div>
               </TabPanel>

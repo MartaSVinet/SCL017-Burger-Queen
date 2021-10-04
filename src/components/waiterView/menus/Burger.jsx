@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Burger = (props) => {
-  const { burger } = props;
+  const { burger, add } = props;
 
   return (
     <div>
@@ -9,7 +9,7 @@ const Burger = (props) => {
       <h3>{burger.name}</h3>
       <p>${burger.price}</p>
       <div>
-        <button>Agregar</button>
+        <button onClick={() => add(burger)}>Agregar</button>
       </div>
     </div>
   );
