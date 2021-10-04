@@ -1,10 +1,10 @@
 import React from 'react';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Breakfast from './Breakfast';
-import Burger from './Burger';
-import Drink from './Drink';
-import Sidedish from './Sidedish';
+import Breakfast from './menus/Breakfast';
+import Burger from './menus/Burger';
+import Drink from './menus/Drink';
+import Sidedish from './menus/Sidedish';
 
 const Main = (props) => {
   const { breakfasts, burgers, sidedishes, drinks } = props;
