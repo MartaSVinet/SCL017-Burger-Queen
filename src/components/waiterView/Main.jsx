@@ -13,9 +13,8 @@ const Main = (props) => {
     <main className="block col-bigger">
       <div>
         <form>
-          <span>Nombre del cliente: </span>
-          <input type="text"/>
-          <input type="submit" value="Adjuntar al detalle"/>
+          <input type="text" placeholder="Nombre del cliente..." className="inputClient"/>
+          <input type="submit" value="Adjuntar al detalle" className="inputClient submit"/>
         </form>
       </div>
       <div>

@@ -59,3 +59,16 @@ button.removeIt {
   font-size: larger;
   width: 2.7rem;
 }
+
+.inputClient {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border: 0.15rem solid #000000;
+  border-radius: 0.25rem;
+}
+
+.inputClient.submit {
+  background-color: #f0c040;
+}
