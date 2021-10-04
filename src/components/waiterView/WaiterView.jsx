@@ -26,6 +26,19 @@ const WaiterView = () => {
     }
   }
 
+  const remove = (article) => {
+    const exist = orderItems.find(anItem => anItem.id === article.id);
+    if (exist.quantity === 1) {
+      setOrderItems(orderItems.filter((anItem) => anItem.id !== article.id));
+    } else {
+      setOrderItems(
+        orderItems.map((anItem) => 
+          anItem.id === article.id ? {...exist, quantity: exist.quantity - 1} : anItem
+        )
+      );
+    }
+  }
+
   return (
     <div>
       <div>
@@ -33,7 +46,7 @@ const WaiterView = () => {
       </div>
       <div>
         <Main add={add} breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes} drinks={drinks}/>
-        <Aside add={add} orderItems={orderItems}/>
+        <Aside add={add} remove={remove} orderItems={orderItems}/>
       </div>
     </div>
   );
