@@ -5,7 +5,7 @@ const Sidedish = (props) => {
 
   return (
     <div>
-      <img src={sidedish.image} alt={sidedish.name}/>
+      <img src={sidedish.image} alt={sidedish.name} className="itemImg"/>
       <h3>{sidedish.name}</h3>
       <p>${sidedish.price}</p>
       <div>

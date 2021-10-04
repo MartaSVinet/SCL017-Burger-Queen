@@ -5,7 +5,7 @@ const Breakfast = (props) => {
 
   return (
     <div>
-      <img src={breakfast.image} alt={breakfast.name}/>
+      <img src={breakfast.image} alt={breakfast.name} className="itemImg"/>
       <h3>{breakfast.name}</h3>
       <p>${breakfast.price}</p>
       <div>

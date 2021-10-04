@@ -5,7 +5,7 @@ const Drink = (props) => {
 
   return (
     <div>
-      <img src={drink.image} alt={drink.name}/>
+      <img src={drink.image} alt={drink.name} className="itemImg"/>
       <h3>{drink.name}</h3>
       <p>${drink.price}</p>
       <div>
