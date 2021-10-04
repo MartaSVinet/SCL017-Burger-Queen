@@ -7,6 +7,7 @@ import './waiterViewStyle.css';
 
 const WaiterView = () => {
   const { breakfasts } = data;
+  const { burgers } = data;
 
   return (
     <div>
@@ -14,7 +15,7 @@ const WaiterView = () => {
         <Header />
       </div>
       <div>
-        <Main breakfasts={breakfasts} />
+        <Main breakfasts={breakfasts} burgers={burgers}/>
         <Aside />
       </div>
     </div>
