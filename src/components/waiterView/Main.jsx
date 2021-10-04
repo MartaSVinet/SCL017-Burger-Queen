@@ -3,9 +3,10 @@ import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Breakfast from './Breakfast';
 import Burger from './Burger';
+import Sidedish from './Sidedish';
 
 const Main = (props) => {
-  const { breakfasts, burgers } = props;
+  const { breakfasts, burgers, sidedishes } = props;
 
   return (
     <main>
@@ -45,7 +46,11 @@ const Main = (props) => {
                 </div>
               </TabPanel>
               <TabPanel>
-                Aquí va el menú Acompañamientos!!
+                <div>
+                  {sidedishes.map((sidedish) => (
+                    <Sidedish key={sidedish.id} sidedish={sidedish}/>
+                  ))}
+                </div>
               </TabPanel>
               <TabPanel>
                 Aquí va el menú Bebidas!!
