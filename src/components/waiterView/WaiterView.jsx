@@ -9,6 +9,7 @@ const WaiterView = () => {
   const { breakfasts } = data;
   const { burgers } = data;
   const { sidedishes } = data;
+  const { drinks } = data;
 
   return (
     <div>
@@ -16,7 +17,7 @@ const WaiterView = () => {
         <Header />
       </div>
       <div>
-        <Main breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes}/>
+        <Main breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes} drinks={drinks}/>
         <Aside />
       </div>
     </div>
