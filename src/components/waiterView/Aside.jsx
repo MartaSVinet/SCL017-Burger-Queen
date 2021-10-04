@@ -2,6 +2,7 @@ import React from 'react';
 
 const Aside = (props) => {
   const { orderItems, add, remove } = props;
+  const itemsTotalPrice = orderItems.reduce((acumulator, currentItem) => acumulator + currentItem.price * currentItem.quantity, 0);
 
   return (
     <aside>
@@ -21,6 +22,15 @@ const Aside = (props) => {
           </div>
         </div>
       ))}
+      {orderItems.length !== 0 && (
+        <div>
+          <hr/>
+          <div>
+            <h3>Total:</h3>
+            <div>${itemsTotalPrice}</div>
+          </div>
+        </div>
+      )}
     </aside>
   );
 }
