@@ -1,17 +1,20 @@
 import React from 'react';
-import './waiterViewStyle.css';
 import Aside from './Aside';
 import Header from './Header';
 import Main from './Main';
+import data from '../../data';
+import './waiterViewStyle.css';
 
 const WaiterView = () => {
+  const { breakfasts } = data;
+
   return (
     <div>
       <div>
         <Header />
       </div>
       <div>
-        <Main />
+        <Main breakfasts={breakfasts} />
         <Aside />
       </div>
     </div>

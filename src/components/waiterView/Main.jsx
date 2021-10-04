@@ -1,8 +1,11 @@
 import React from 'react';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Breakfast from './Breakfast';
 
-const Main = () => {
+const Main = (props) => {
+  const { breakfasts } = props;
+
   return (
     <main>
       <div>
@@ -20,7 +23,11 @@ const Main = () => {
             <Tab>Resto del día</Tab>
           </TabList>
           <TabPanel>
-            Aquí val el menú Desayunos!!
+            <div>
+              {breakfasts.map((breakfast) => (
+                <Breakfast key={breakfast.id} breakfast={breakfast}/>
+              ))}
+            </div>
           </TabPanel>
           <TabPanel>
             <Tabs>
