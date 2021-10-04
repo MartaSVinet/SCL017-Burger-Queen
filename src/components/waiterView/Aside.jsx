@@ -14,8 +14,8 @@ const Aside = (props) => {
         <div key={item.id} className="row center">
           <div className="col-smaller">{item.name}</div>
           <div className="col-smaller">
-            <button onClick={() => add(item)} className="addIt">+</button>
-            <button onClick={() => remove(item)} className="removeIt">-</button>
+            <button onClick={() => add(item)} className="btn addIt">+</button>
+            <button onClick={() => remove(item)} className="btn removeIt">-</button>
           </div>
           <div className="col-smaller text-right">
             {item.quantity} x ${item.price}

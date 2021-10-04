@@ -9,7 +9,7 @@ const Breakfast = (props) => {
       <h3 className="itemName">{breakfast.name}</h3>
       <p className="itemPrice">${breakfast.price}</p>
       <div>
-        <button onClick={() => add(breakfast)}>Agregar</button>
+        <button className="btn" onClick={() => add(breakfast)}>Agregar</button>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ body {
   margin: 0rem;
 }
 
-button {
+.btn {
   font-size: 1rem;
   font-weight: bolder;
   padding: 0.1rem;
@@ -48,13 +48,13 @@ button {
   width: 6rem;
 }
 
-button.addIt {
+.btn.addIt {
   background-color: rgb(209, 20, 58);
   font-size: larger;
   width: 2.7rem;
 }
 
-button.removeIt {
+.btn.removeIt {
   background-color: rgb(0, 100, 0);
   font-size: larger;
   width: 2.7rem;
@@ -71,6 +71,7 @@ button.removeIt {
 
 .inputClient.submit {
   background-color: #f0c040;
+  width: 10rem;
 }
 
 .text-right {

@@ -9,7 +9,7 @@ const Drink = (props) => {
       <h3 className="itemName">{drink.name}</h3>
       <p className="itemPrice">${drink.price}</p>
       <div>
-        <button onClick={() => add(drink)}>Agregar</button>
+        <button className="btn" onClick={() => add(drink)}>Agregar</button>
       </div>
     </div>
   );
