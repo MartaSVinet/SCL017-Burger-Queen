@@ -72,3 +72,7 @@ button.removeIt {
 .inputClient.submit {
   background-color: #f0c040;
 }
+
+.text-right {
+  text-align: right;
+}
