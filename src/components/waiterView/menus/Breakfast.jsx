@@ -6,8 +6,8 @@ const Breakfast = (props) => {
   return (
     <div>
       <img src={breakfast.image} alt={breakfast.name} className="itemImg"/>
-      <h3>{breakfast.name}</h3>
-      <p>${breakfast.price}</p>
+      <h3 className="itemName">{breakfast.name}</h3>
+      <p className="itemPrice">${breakfast.price}</p>
       <div>
         <button onClick={() => add(breakfast)}>Agregar</button>
       </div>

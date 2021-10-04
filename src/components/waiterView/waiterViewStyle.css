@@ -30,3 +30,32 @@ body {
 .itemImg {
   max-width: 6rem;
 }
+
+.itemName, .itemPrice {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  margin-bottom: 0.5rem;
+  border: 0.15rem solid #000000;
+  border-radius: 0.25rem;
+  background-color: #f0c040;
+  width: 6rem;
+}
+
+button.addIt {
+  background-color: rgb(209, 20, 58);
+  font-size: larger;
+  width: 2.7rem;
+}
+
+button.removeIt {
+  background-color: rgb(0, 100, 0);
+  font-size: larger;
+  width: 2.7rem;
+}
