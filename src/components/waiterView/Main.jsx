@@ -10,12 +10,11 @@ const Main = (props) => {
   const { breakfasts, burgers, sidedishes, drinks, add } = props;
 
   return (
-    <main>
+    <main className="block col-bigger">
       <div>
         <form>
-          <span>Nombre del cliente: </span>
-          <input type="text"/>
-          <input type="submit" value="Adjuntar al detalle"/>
+          <input type="text" placeholder="Nombre del cliente..." className="inputClient"/>
+          <input type="submit" value="Adjuntar al detalle" className="inputClient submit"/>
         </form>
       </div>
       <div>
@@ -26,7 +25,7 @@ const Main = (props) => {
             <Tab>Resto del día</Tab>
           </TabList>
           <TabPanel>
-            <div>
+            <div className="row">
               {breakfasts.map((breakfast) => (
                 <Breakfast key={breakfast.id} breakfast={breakfast} add={add}/>
               ))}
@@ -40,21 +39,21 @@ const Main = (props) => {
                 <Tab>Bebidas</Tab>
               </TabList>
               <TabPanel>
-                <div>
+                <div className="row">
                   {burgers.map((burger) => (
                     <Burger key={burger.id} burger={burger} add={add}/>
                   ))}
                 </div>
               </TabPanel>
               <TabPanel>
-                <div>
+                <div className="row">
                   {sidedishes.map((sidedish) => (
                     <Sidedish key={sidedish.id} sidedish={sidedish} add={add}/>
                   ))}
                 </div>
               </TabPanel>
               <TabPanel>
-                <div>
+                <div className="row">
                   {drinks.map((drink) => (
                     <Drink key={drink.id} drink={drink} add={add}/>
                   ))}

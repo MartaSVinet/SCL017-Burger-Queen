@@ -5,19 +5,19 @@ const Aside = (props) => {
   const itemsTotalPrice = orderItems.reduce((acumulator, currentItem) => acumulator + currentItem.price * currentItem.quantity, 0);
 
   return (
-    <aside>
+    <aside className="block col-smaller">
       <h2>Detalle del Pedido:</h2>
       <div>
         {orderItems.length === 0 && <div>Cero ítems.</div>}
       </div>
       {orderItems.map((item) => (
-        <div key={item.id}>
-          <div>{item.name}</div>
-          <div>
-            <button onClick={() => add(item)}>+</button>
-            <button onClick={() => remove(item)}>-</button>
+        <div key={item.id} className="row center">
+          <div className="col-smaller">{item.name}</div>
+          <div className="col-smaller">
+            <button onClick={() => add(item)} className="btn addIt">+</button>
+            <button onClick={() => remove(item)} className="btn removeIt">-</button>
           </div>
-          <div>
+          <div className="col-smaller text-right">
             {item.quantity} x ${item.price}
           </div>
         </div>
@@ -25,9 +25,9 @@ const Aside = (props) => {
       {orderItems.length !== 0 && (
         <div>
           <hr/>
-          <div>
-            <h3>Total:</h3>
-            <div>${itemsTotalPrice}</div>
+          <div className="row center">
+            <h3 className="col-smaller text-right">Total:</h3>
+            <div className="col-smaller text-right">${itemsTotalPrice}</div>
           </div>
         </div>
       )}

@@ -5,11 +5,11 @@ const Sidedish = (props) => {
 
   return (
     <div>
-      <img src={sidedish.image} alt={sidedish.name}/>
-      <h3>{sidedish.name}</h3>
-      <p>${sidedish.price}</p>
+      <img src={sidedish.image} alt={sidedish.name} className="itemImg"/>
+      <h3 className="itemName">{sidedish.name}</h3>
+      <p className="itemPrice">${sidedish.price}</p>
       <div>
-        <button onClick={() => add(sidedish)}>Agregar</button>
+        <button className="btn" onClick={() => add(sidedish)}>Agregar</button>
       </div>
     </div>
   );

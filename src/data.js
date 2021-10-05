@@ -40,13 +40,13 @@ const data = {
   burgers: [
     {
       id: '7',
-      name: 'Hamburguesa simple',
+      name: 'HB simple',
       price: 3000,
       image: './images/burgers/simple.png',
     },
     {
       id: '8',
-      name: 'Hamburguesa doble',
+      name: 'HB doble',
       price: 5000,
       image: './images/burgers/doble.png',
     },

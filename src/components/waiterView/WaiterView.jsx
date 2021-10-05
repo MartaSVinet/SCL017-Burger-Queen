@@ -44,7 +44,7 @@ const WaiterView = () => {
       <div>
         <Header />
       </div>
-      <div>
+      <div className="row">
         <Main add={add} breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes} drinks={drinks}/>
         <Aside add={add} remove={remove} orderItems={orderItems}/>
       </div>
