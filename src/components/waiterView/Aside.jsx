@@ -7,6 +7,7 @@ const Aside = (props) => {
   const orderId = 'order-'.concat(Date.now());
   const confirm = () => {
     window.localStorage.setItem(orderId, JSON.stringify(totalOrder));
+    window.location.reload();
   };
 
   return (
