@@ -3,6 +3,11 @@ import React from 'react';
 const Aside = (props) => {
   const { orderItems, add, remove } = props;
   const itemsTotalPrice = orderItems.reduce((acumulator, currentItem) => acumulator + currentItem.price * currentItem.quantity, 0);
+  const totalOrder = {...orderItems, total: itemsTotalPrice};
+  const orderId = 'order-'.concat(Date.now());
+  const confirm = () => {
+    window.localStorage.setItem(orderId, JSON.stringify(totalOrder));
+  };
 
   return (
     <aside className="block col-smaller">
@@ -28,6 +33,9 @@ const Aside = (props) => {
           <div className="row center">
             <h3 className="col-smaller text-right">Total:</h3>
             <div className="col-smaller text-right">${itemsTotalPrice}</div>
+            <div>
+              <button onClick={() => confirm()}>Confirmar pedido</button>
+            </div>
           </div>
         </div>
       )}
@@ -37,4 +45,3 @@ const Aside = (props) => {
 
 export default Aside;
 
-//window.localStorage.setItem('list', itemsTotalPrice);
