@@ -36,3 +36,5 @@ const Aside = (props) => {
 }
 
 export default Aside;
+
+//window.localStorage.setItem('list', itemsTotalPrice);
