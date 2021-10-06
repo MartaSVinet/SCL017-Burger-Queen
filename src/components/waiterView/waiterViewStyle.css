@@ -67,6 +67,7 @@ body {
   margin: 0.1rem;
   border: 0.15rem solid #000000;
   border-radius: 0.25rem;
+  width: 18rem;
 }
 
 .text-right {

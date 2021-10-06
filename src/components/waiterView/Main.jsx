@@ -13,7 +13,7 @@ const Main = (props) => {
     <main className="block col-bigger">
       <div>
         <form onSubmit={submitCustomerName}>
-          <input type="text" placeholder="Nombre del cliente..." name="aName" onChange={handleInputChange} className="inputClient"/>
+          <input type="text" placeholder="Escribe aquí el nombre del cliente..." name="aName" onChange={handleInputChange} className="inputClient"/>
         </form>
       </div>
       <div>
