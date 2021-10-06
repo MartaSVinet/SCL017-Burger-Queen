@@ -8,10 +8,11 @@ const Aside = (props) => {
     <aside className="block col-smaller">
       <h2>Detalle del Pedido:</h2>
       <div>
-        {customerName.aName !== '' && <p><b>Nombre del cliente:</b> {customerName.aName}.</p>}
+        {customerName.aName !== '' && <p><b>Nombre del cliente:</b><br/> {customerName.aName}.</p>}
       </div>
       <div>
-        {orderItems.length === 0 && <p>Cero ítems.</p>}
+        {orderItems.length === 0 && <p><b>Cero ítems.</b></p>}
+        {orderItems.length !== 0 && <p><b>Lista de productos:</b></p>}
       </div>
       {orderItems.map((item) => (
         <div key={item.id} className="row center">
