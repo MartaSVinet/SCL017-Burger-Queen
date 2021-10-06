@@ -14,7 +14,6 @@ const Main = (props) => {
       <div>
         <form onSubmit={submitCustomerName}>
           <input type="text" placeholder="Nombre del cliente..." name="aName" onChange={handleInputChange} className="inputClient"/>
-          <button type="submit" className="inputClient submit">Adjuntar al detalle</button>
         </form>
       </div>
       <div>

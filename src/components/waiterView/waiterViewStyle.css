@@ -69,11 +69,6 @@ body {
   border-radius: 0.25rem;
 }
 
-.inputClient.submit {
-  background-color: #f0c040;
-  width: 10rem;
-}
-
 .text-right {
   text-align: right;
 }
