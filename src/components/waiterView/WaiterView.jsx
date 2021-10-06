@@ -12,6 +12,8 @@ const WaiterView = () => {
   const { drinks } = data;
 
   const [orderItems, setOrderItems] = useState([]);
+  
+  const [customerName, setCustomerName] = useState({aName: ''});
 
   const add = (article) => {
     const exist = orderItems.find(anItem => anItem.id === article.id);
@@ -39,14 +41,25 @@ const WaiterView = () => {
     }
   }
 
+  const handleInputChange = (e) => {
+    setCustomerName({
+      ...customerName,
+      [e.target.name] : e.target.value
+    });
+  }
+
+  const submitCustomerName = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div>
       <div>
         <Header />
       </div>
       <div className="row">
-        <Main add={add} breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes} drinks={drinks}/>
-        <Aside add={add} remove={remove} orderItems={orderItems}/>
+        <Main handleInputChange={handleInputChange} submitCustomerName={submitCustomerName} add={add} breakfasts={breakfasts} burgers={burgers} sidedishes={sidedishes} drinks={drinks}/>
+        <Aside customerName={customerName} add={add} remove={remove} orderItems={orderItems}/>
       </div>
     </div>
   );

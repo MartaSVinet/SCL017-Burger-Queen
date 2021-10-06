@@ -7,14 +7,14 @@ import Drink from './menus/Drink';
 import Sidedish from './menus/Sidedish';
 
 const Main = (props) => {
-  const { breakfasts, burgers, sidedishes, drinks, add } = props;
+  const { handleInputChange, submitCustomerName, breakfasts, burgers, sidedishes, drinks, add } = props;
 
   return (
     <main className="block col-bigger">
       <div>
-        <form>
-          <input type="text" placeholder="Nombre del cliente..." className="inputClient"/>
-          <input type="submit" value="Adjuntar al detalle" className="inputClient submit"/>
+        <form onSubmit={submitCustomerName}>
+          <input type="text" placeholder="Nombre del cliente..." name="aName" onChange={handleInputChange} className="inputClient"/>
+          <button type="submit" className="inputClient submit">Adjuntar al detalle</button>
         </form>
       </div>
       <div>

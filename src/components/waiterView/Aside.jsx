@@ -1,14 +1,17 @@
 import React from 'react';
 
 const Aside = (props) => {
-  const { orderItems, add, remove } = props;
+  const { orderItems, add, remove, customerName } = props;
   const itemsTotalPrice = orderItems.reduce((acumulator, currentItem) => acumulator + currentItem.price * currentItem.quantity, 0);
 
   return (
     <aside className="block col-smaller">
       <h2>Detalle del Pedido:</h2>
       <div>
-        {orderItems.length === 0 && <div>Cero ítems.</div>}
+        {customerName.aName !== '' && <p><b>Nombre del cliente:</b> {customerName.aName}.</p>}
+      </div>
+      <div>
+        {orderItems.length === 0 && <p>Cero ítems.</p>}
       </div>
       {orderItems.map((item) => (
         <div key={item.id} className="row center">
