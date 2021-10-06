@@ -33,6 +33,9 @@ const Aside = (props) => {
             <h3 className="col-smaller text-right">Total:</h3>
             <div className="col-smaller text-right">${itemsTotalPrice}</div>
           </div>
+          <div>
+            <button className="btn sendIt">ENVIAR A COCINA</button>
+          </div>
         </div>
       )}
     </aside>
