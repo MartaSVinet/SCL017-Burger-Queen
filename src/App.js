@@ -3,6 +3,7 @@ import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Home from './components/Home';
 import WaiterView from './components/waiterView/WaiterView';
+import KitchenView from './components/kitchenView/KitchenView';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/waiter">
           <WaiterView />
+        </Route>
+        <Route path="/kitchen">
+          <KitchenView />
         </Route>
       </Switch>
     </Router>
