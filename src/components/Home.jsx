@@ -1,20 +1,26 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
-const Home = () => {
+const Home = (props) => {
+
+  const toWaiterView = () => {
+    props.history.push('/waiter')
+  }
+
   return (
     <div>
       <div>
         <img src="" alt=""/>
+        <h1>Burger Queen</h1>
       </div>
       <div>
-        <h1>¡Bienvenid@!</h1>
+        <h2>¡Bienvenid@!</h2>
         <p>¿Cuál es tu rol?</p>
-        <button>Meser@</button>
+        <button onClick={toWaiterView}>Meser@</button>
         <button>Cociner@</button>
-        <button>Cerrar sesión</button>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default withRouter(Home);
