@@ -16,8 +16,14 @@ const Home = (props) => {
       <div>
         <h2>¡Bienvenid@!</h2>
         <p>¿Cuál es tu rol?</p>
-        <button onClick={toWaiterView}>Meser@</button>
-        <button>Cociner@</button>
+        <div>
+          <img src="../images/waiter.png" alt=""/>
+          <button onClick={toWaiterView}>Meser@</button>         
+        </div>
+        <div>
+          <img src="../images/chef.png" alt=""/>
+          <button>Cociner@</button>
+        </div>
       </div>
     </div>
   );
