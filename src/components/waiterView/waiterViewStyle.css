@@ -2,6 +2,7 @@ body {
   background-color: rgb(184, 82, 42);
 }
 
+/* waiter */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -78,4 +79,52 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+/* home */
+.card-home {
+  background-color: rgb(235, 207, 166);
+  padding: 0.5rem;
+  margin: 10% auto;
+  border-radius: 0.5rem;
+  width: 35rem;
+  height: 30rem;
+  text-align: center;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.507);
+}
+
+.boxes-container-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3rem;
+}
+
+.boxes-each-home {
+  border: 0.2rem solid rgb(184, 82, 42);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.507);
+}
+
+.btns-each {
+  border: 0.2rem solid rgb(184, 82, 42);
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(184, 82, 42);
+  color: rgb(235, 207, 166);
+}
+
+.txt-home {
+  color: rgb(184, 82, 42);
+}
+
+.txt-home.title {
+  font-size: 4rem;
+}
+
+.txt-home.subtitle {
+  font-size: 2rem;
 }

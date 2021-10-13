@@ -8,21 +8,21 @@ const Home = (props) => {
   }
 
   return (
-    <div>
+    <div className="card-home">
       <div>
-        <img src="" alt=""/>
-        <h1>Burger Queen</h1>
+        <h1 className="txt-home title">Burger Queen</h1>
       </div>
       <div>
-        <h2>¡Bienvenid@!</h2>
-        <p>¿Cuál es tu rol?</p>
-        <div>
-          <img src="../images/waiter.png" alt=""/>
-          <button onClick={toWaiterView}>Meser@</button>         
-        </div>
-        <div>
-          <img src="../images/chef.png" alt=""/>
-          <button>Cociner@</button>
+        <h2 className="txt-home subtitle">¿Cuál es tu rol?</h2>
+        <div className="boxes-container-home">
+          <div className="boxes-each-home">
+            <img src="../images/waiter.png" alt=""/><br/>
+            <button onClick={toWaiterView} className="btns-each">Meser@</button>         
+          </div>
+          <div className="boxes-each-home">
+            <img src="../images/chef.png" alt=""/><br/>
+            <button className="btns-each">Cociner@</button>
+          </div>
         </div>
       </div>
     </div>
